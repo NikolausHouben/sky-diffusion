@@ -1,4 +1,4 @@
-[![](https://raw.githubusercontent.com/wandb/assets/main/wandb-github-badge-gradient.svg)]()
+[![](https://raw.githubusercontent.com/wandb/assets/main/wandb-github-badge-gradient.svg)](https://wandb.ai/wattcast/skydiffusion)
 
 # Sky Diffusion
 
