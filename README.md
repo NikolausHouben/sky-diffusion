@@ -1,10 +1,9 @@
-[![](https://raw.githubusercontent.com/wandb/assets/main/wandb-github-badge-gradient.svg)](https://wandb.ai/capecape/ddpm_clouds/reports/Diffusion-on-the-Clouds-Short-term-solar-energy-forecasting-with-Diffusion-Models--VmlldzozNDMxNTg5)
-[![PyPI version](https://badge.fury.io/py/cloud_diffusion.svg)](https://badge.fury.io/py/cloud_diffusion)
+[![](https://raw.githubusercontent.com/wandb/assets/main/wandb-github-badge-gradient.svg)]()
 
+# Sky Diffusion
 
-# Cloud Diffusion Experiment
-
-This codebase contains an implementation of a deep diffusion model applied to cloud images. It was developed as part of a research project exploring the potential of diffusion models for image generation and forecasting.
+This codebase contains an implementation of a deep diffusion model to predict the next frames of a sky camera, and thereby forecast PV power.
+It is an extension of the [Cloud Diffusion](https://github.com/tcapelle/cloud_diffusion) repository. The crucial difference from original repository is the type of data the models have been trained on: In the original version the diffusion model predicts satelite images of cloud formations, whereas here the diffusion models are used to predict sky images from the [SKIPP'D](https://github.com/yuhao-nie/Stanford-solar-forecasting-dataset#1) dataset, which also includes power measurements of a PV system next to the sky camera.
 
 ## Setup
 
