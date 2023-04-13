@@ -12,7 +12,7 @@ from torch.utils.data.dataloader import default_collate
 
 from fastprogress import progress_bar
 
-from cloud_diffusion.wandb import log_images, save_model
+from cloud_diffusion.wandb_utils import log_images, save_model
 
 def noisify_last_frame(frames, noise_func):
     "Noisify the last frame of a sequence"

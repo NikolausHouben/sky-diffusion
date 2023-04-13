@@ -7,7 +7,7 @@ from fastprogress import progress_bar
 from cloud_diffusion.dataset import download_dataset, CloudDataset
 from cloud_diffusion.ddpm import UNet2D, get_unet_params, ddim_sampler
 from cloud_diffusion.utils import parse_args, set_seed
-from cloud_diffusion.wandb import to_video, vhtile
+from cloud_diffusion.wandb_utils import to_video, vhtile
 
 logging.basicConfig(format='%(asctime)s - %(levelname)s: %(message)s')
 logger = logging.getLogger(__name__)
