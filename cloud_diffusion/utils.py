@@ -9,6 +9,8 @@ from torch.optim import AdamW
 from torch.utils.data import DataLoader
 from torch.optim.lr_scheduler import OneCycleLR
 from torch.utils.data.dataloader import default_collate
+import matplotlib.pyplot as plt
+import matplotlib.animation as animation
 
 from fastprogress import progress_bar
 
@@ -131,3 +133,16 @@ def parse_args(config):
     # update config with parsed args
     for k, v in args.items():
         setattr(config, k, v)
+
+
+def save_gif(images, filename):
+    "Save a list of images as a gif"
+    fig = plt.figure()
+    plots = []
+    for i in range(len(images)):
+        plot = plt.imshow(images[i], animated=True)
+        plots.append([plot])
+
+    animate = animation.ArtistAnimation(fig, plots, interval=50, blit=True, repeat_delay=1000)
+    animate.save(filename)
+    plt.show()
